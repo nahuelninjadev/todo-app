@@ -46,4 +46,16 @@ export default {
 .top-bar img{
   cursor: pointer;
 }
+
+@media (min-width: 300px){
+  .top-bar{
+    padding: 0px 10px;
+  }
+};
+
+@media (min-width: 1440px){
+  .top-bar{
+    padding: 0px;
+  }
+};
 </style>

@@ -19,12 +19,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 .container{
-  width: 600px;
+  /* width: 600px; */
   max-height: 700px;
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0px 20px;
+  
+}
+
+@media (min-width: 300px){
+  .container{
+    width: 300px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container{
+    width: 600px;
+    padding: 0px 20px;
+  }
 }
 </style>

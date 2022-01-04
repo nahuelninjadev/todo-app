@@ -42,7 +42,6 @@ body.dark-theme{
 
 
 .banner{
-  width: 1440px;
   height: 300px;
   display: block;
   margin: 0 auto;
@@ -57,6 +56,13 @@ body.dark-theme{
   box-shadow: 1px 2px 5px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px 2px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 2px 5px -2px rgba(0,0,0,0.75);
+}
+
+
+@media (min-width: 1440px) {
+  .banner{
+    width: 1440px;  
+  }
 }
 
 </style>

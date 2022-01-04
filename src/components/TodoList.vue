@@ -11,6 +11,11 @@
       <div class="btn-clear">
         <a @click="clearDone">Clear completed</a> 
       </div>
+    </div>
+    <div class="btn-container-mobile">
+      <div class="btn-clear-mobile">
+        <a @click="clearDone">Clear completed</a> 
+      </div>
     </div>    
   </div>
 </template>
@@ -98,11 +103,13 @@ body.dark-theme .list-container{
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 14px;
   color: var(--dark-grayish-blue-dt);
 }
+
+
 
 .btn-filters{
   text-align: center;
@@ -136,5 +143,47 @@ body.dark-theme .btn-container a:hover{
 .btn-clear a{
   transition: color .2s linear;
 }
+
+
+.btn-container-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-grayish-blue-dt);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 300px){
+
+  .btn-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-clear{
+    display: none;
+  }
+
+  .btn-container-mobile{
+    display: flex;
+  }
+} 
+
+@media (min-width: 1440px){
+
+  .btn-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn-clear{
+    display: inherit;
+  }
+
+  .btn-container-mobile{
+    display: none;
+  }
+} 
 
 </style>

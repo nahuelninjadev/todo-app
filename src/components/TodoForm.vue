@@ -1,5 +1,7 @@
 <template>
-  <input type="text" v-model="todoname" @keyup.enter="add" class="shadow" />
+  <div class="form-container">
+    <input type="text" v-model="todoname" @keyup.enter="add" class="shadow" />
+  </div>
 </template>
 
 <script>
@@ -45,5 +47,17 @@ body.dark-theme input{
   background-color: var(--very-dark-desaturated-blue);
   color: hsl(234, 39%, 85%);
 }
+
+@media (min-width: 300px){
+  .form-container{
+    padding: 0px 10px;
+  }
+};
+
+@media (min-width: 1440px){
+  .form-container{
+    padding: 0px;
+  }
+};
 
 </style>

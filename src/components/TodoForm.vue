@@ -50,7 +50,7 @@ body.dark-theme input{
 
 @media (min-width: 300px){
   .form-container{
-    padding: 0px 10px;
+    padding: 0px;
   }
 };
 

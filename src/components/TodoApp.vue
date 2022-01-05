@@ -3,6 +3,9 @@
     <todo-bar/>
     <todo-form/>
     <todo-list/>
+    <div class="footer">
+      <span>Challenge from <a href="https://www.frontendmentor.io/">frontendmentor.io</a></span>
+    </div>
   </div>
 </template>
 
@@ -26,6 +29,17 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   
+}
+
+.footer{
+  padding: 20px;
+  text-align:center;
+  color: var(--very-dark-grayish-blue-lt);
+}
+
+.footer a {
+  color: var(--bright-blue);
+  text-decoration: none;
 }
 
 @media (min-width: 300px){

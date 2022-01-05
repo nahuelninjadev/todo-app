@@ -61,7 +61,8 @@ body.dark-theme{
 
 @media (min-width: 1440px) {
   .banner{
-    width: 1440px;  
+    width: 1440px; 
+    border-radius: 0px 0px 8px 8px; 
   }
 }
 
